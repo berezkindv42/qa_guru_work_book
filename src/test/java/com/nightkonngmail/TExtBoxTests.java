@@ -12,10 +12,10 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class TExtBoxTests {
 
-//    @BeforeAll
-//    static void beforeAllMethod() {
-//        Configuration.browserSize = "1920x1080";
-//    }
+    @BeforeAll
+    static void beforeAllMethod() {
+        Configuration.browserSize = "1920x1080";
+    }
 
     @Test
     void successTest() {
@@ -25,7 +25,7 @@ public class TExtBoxTests {
         $("#userEmail").setValue("email@email.com");
         $("#currentAddress").setValue("this current address");
         $("#permanentAddress").setValue("this permanent address");
-        $("#submit").scrollTo().click();
+        $("#submit").click();
 
         $("#output").shouldBe(visible);
         $("#output #name").shouldHave(text("Alex"));
