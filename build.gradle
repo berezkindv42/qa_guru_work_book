@@ -2,6 +2,10 @@ plugins {
     id 'java-library'
 }
 
+//System.setProperty("file.encoding", "UTF-8")
+//compileJava.options.encoding = "UTF-8"
+//compileTestJava.options.encoding = "UTF-8"
+
 repositories {
     mavenCentral()
 }

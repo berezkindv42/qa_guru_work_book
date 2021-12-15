@@ -1,4 +1,4 @@
-package com.nightkonngmail;
+package com.nightkonngmail.tests;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
