@@ -39,6 +39,10 @@ public class CssXpathExamples {
         // с пробелом мы как бы ищем элемент .inputtext и внутри него элемент login_form_input_box
         // без пробела это один элемент .inputext.login_form_input_box
 
+        // <div>Hello qa.guru!</div>        подобный кусок кода можно поискать по тексту
+        $(byText("Hello qa.guru!")); // по полному тексту
+        $(withText("llo qa.gu"));  // или по куску текста
+
 
         // <input type="email" class="inputtext login_form_input_box" name="email" id="email" data-testid="email">
         $("input#email.inputext.login_form_input_box[data-testid=email]");
