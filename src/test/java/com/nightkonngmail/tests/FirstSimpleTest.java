@@ -1,4 +1,4 @@
-package com.nightkonngmail;
+package com.nightkonngmail.tests;
 
 import org.junit.jupiter.api.*;
 
