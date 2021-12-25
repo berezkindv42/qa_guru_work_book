@@ -63,7 +63,7 @@ public class StudentsRegistrationFormTests {
 
         $("#hobbiesWrapper").$(byText("Sports")).click(); // Работает. Ищем по тексту в корневом локаторе и кликаем по нему.
 
-//        $("#uploadPicture").uploadFile(new File("src/test/resources/img/1.png")); // Первый способ. Рабобает. Должна существовать папка resourses (это стандартная папка ресурсов) содержащая файл.
+//        $("#uploadPicture").uploadFile(new File("src/test/resources/img/1.png")); // Первый способ. Работает. Должна существовать папка resourses (это стандартная папка ресурсов) содержащая файл.
 //        File someFile = new File("src/test/resources/img/1.png"); // Здесь мы просто выносим файл в отдельную строку
 //        $("#uploadPicture").uploadFile(someFile); // метод .uploadFile ждет на вход элемент с типом File, по этому раньше вы создаем этот элемент в коде посредством оператора new
         $("#uploadPicture").uploadFromClasspath("img/1.png"); // Работает. Здесь метод .uploadFromClasspath уже знает путь до папки resourses, по этому полный путь указывать не требуется
@@ -77,6 +77,18 @@ public class StudentsRegistrationFormTests {
 
         $("#submit").click();
 
-        // todo Asserts
+//      Asserts. Здесь проверка.
+        $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
+        $(".modal-body").shouldHave(text("Vasiliy Pupkin"),
+                text("vasiliy.p@email.com"),
+                text("Male"),
+                text("4951234567"),
+                text("12 April,1961"),
+                text("English"),
+                text("Sports, Reading, Music"),
+                text("testUploadFile1.png"),
+                text("Random address"),
+                text("NCR Delhi"));
+        $("#closeLargeModal").click();
     }
 }
