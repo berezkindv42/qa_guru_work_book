@@ -77,10 +77,6 @@ public class StudentsRegistrationFormTests {
 
         $("#submit").click();
 
-        /* javascript:document.onmousemove = function(e){var x = e.pageX;var y = e.pageY;e.target.title = "X is "+x+" and Y is "+y;};
-        скрипт показывающий координаты мыши в devtools
-         */ // положу тут на всякий случай
-
         // todo Asserts
     }
 }
