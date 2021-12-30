@@ -88,6 +88,7 @@ public class Lesson3HomeWork {
 //        $("#column-a").shouldHave(text("B"));
 //        $("#column-b").shouldHave(text("A"));
 
+
     }
 
 }

@@ -23,6 +23,5 @@ public class FirstContributorTest {
         $$(".Popover-message").find(visible).shouldHave(text("Andrei Solntsev"));
 
 //        sleep(5000);
-
     }
 }
