@@ -206,5 +206,6 @@ public class SelenideSnippets {
     long fortytwo = executeJavaScript("return arguments[0]*arguments[1];", 6, 7);
 
   }
+
 }
 

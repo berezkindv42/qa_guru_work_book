@@ -34,5 +34,4 @@ public class TExtBoxTests {
         $("#output #permanentAddress").shouldHave(text("this permanent address"));
 
     }
-
 }

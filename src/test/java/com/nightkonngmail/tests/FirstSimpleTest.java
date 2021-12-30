@@ -39,5 +39,4 @@ public class FirstSimpleTest {
         System.out.println("@AfterAll method!");
     }
 
-
 }

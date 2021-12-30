@@ -31,6 +31,4 @@ public class OrderedTests {
     void forthTest() {
         System.out.println("test 4");
     }
-
-
 }

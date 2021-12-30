@@ -41,5 +41,4 @@ public class SearchSelenideRepo {
 //        Все проверки НУЖНО делать через .should'ы!
 
     }
-
 }
