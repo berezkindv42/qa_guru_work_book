@@ -48,8 +48,6 @@ public class CssXpathExamples {
         $("input#email.inputext.login_form_input_box[data-testid=email]");
         // можно сложить все и это будет супер конкретное обращение, но это избыточно
 
-
-
     }
 
 }

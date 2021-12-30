@@ -120,7 +120,6 @@ public class SelenideSnippets {
     $("").shouldBe(visible, Duration.ofSeconds(30));
 //    $("").waitUntil(visible, 30000);
 
-
   }
 
   void conditions_examples() {
@@ -186,7 +185,6 @@ public class SelenideSnippets {
     $$("").shouldHave(sizeGreaterThanOrEqual(1));
     $$("").shouldHave(sizeLessThan(3));
     $$("").shouldHave(sizeLessThanOrEqual(2));
-
 
   }
 

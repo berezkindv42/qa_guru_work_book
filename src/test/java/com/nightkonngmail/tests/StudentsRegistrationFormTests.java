@@ -91,4 +91,5 @@ public class StudentsRegistrationFormTests {
                 text("NCR Delhi"));
         $("#closeLargeModal").click();
     }
+
 }
