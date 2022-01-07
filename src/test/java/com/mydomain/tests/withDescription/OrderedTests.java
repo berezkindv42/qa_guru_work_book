@@ -1,9 +1,6 @@
-package com.nightkonngmail.tests;
+package com.mydomain.tests.withDescription;
 
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
 
 //@TestMethodOrder(MethodOrderer.OrderAnnotation.class) // Без этой аннотации и Order'ов тесты будут запускаться в разнобой, так и должно быть. Если мы хотим запускать тесты по порядку следует добавить эту аннотацию и ордеры с нумерацией.
 // так же существует аннотация для запуска тестов в разных классах - @TestMethodOrder(ClassOrderer.OrderAnnotation.class // но это нехороший подход!

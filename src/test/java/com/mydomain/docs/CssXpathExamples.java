@@ -1,4 +1,4 @@
-package com.nightkonngmail.docs;
+package com.mydomain.docs;
 
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;

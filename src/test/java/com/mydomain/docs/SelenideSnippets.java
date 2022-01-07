@@ -1,4 +1,4 @@
-package com.nightkonngmail.docs;
+package com.mydomain.docs;
 
 import com.codeborne.selenide.*;
 import org.openqa.selenium.Keys;
