@@ -1,14 +1,14 @@
-package com.mydomain.pageObjectsAndRandomUtils.mydomain.testsExamples;
+package com.mydomain.tests.homeWorks.pageObjectsAndRandomUtils.testsExamples;
 
 import com.codeborne.selenide.Configuration;
-import com.mydomain.pageObjectsAndRandomUtils.mydomain.pages.components.RegistrationPage;
+import com.mydomain.tests.homeWorks.pageObjectsAndRandomUtils.pages.components.RegistrationPage;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
-import static com.mydomain.pageObjectsAndRandomUtils.mydomain.testsExamples.TestData.userEmail;
+import static com.mydomain.tests.homeWorks.pageObjectsAndRandomUtils.testsExamples.TestData.userEmail;
 
 public class PracticeFormTestsWithDescription {
 

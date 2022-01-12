@@ -1,4 +1,4 @@
-package com.mydomain.pageObjectsAndRandomUtils.mydomain.utils;
+package com.mydomain.tests.homeWorks.pageObjectsAndRandomUtils.utils;
 
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;

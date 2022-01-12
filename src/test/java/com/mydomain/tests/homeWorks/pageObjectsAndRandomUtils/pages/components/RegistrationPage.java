@@ -1,4 +1,4 @@
-package com.mydomain.pageObjectsAndRandomUtils.mydomain.pages.components;
+package com.mydomain.tests.homeWorks.pageObjectsAndRandomUtils.pages.components;
 
 import com.codeborne.selenide.SelenideElement;
 

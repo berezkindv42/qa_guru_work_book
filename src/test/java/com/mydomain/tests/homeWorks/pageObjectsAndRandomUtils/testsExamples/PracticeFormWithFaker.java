@@ -1,6 +1,7 @@
-package com.mydomain.pageObjectsAndRandomUtils.mydomain.testsExamples;
+package com.mydomain.tests.homeWorks.pageObjectsAndRandomUtils.testsExamples;
 
 import com.codeborne.selenide.Configuration;
+import com.github.javafaker.Faker;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -8,13 +9,13 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-import static com.mydomain.pageObjectsAndRandomUtils.mydomain.utils.RandomUtils.getRandomEmail;
-import static com.mydomain.pageObjectsAndRandomUtils.mydomain.utils.RandomUtils.getRandomString;
 
-public class PracticeFormWithRandomUtils {
+public class PracticeFormWithFaker {
 
-    String firstName = getRandomString(7);
-    String userEmail = getRandomEmail();
+    Faker faker = new Faker(); // крайне интересная и полезная библиотека с множеством вариантов генерации всякого
+    String firstName = faker.name().firstName();
+    String userEmail = faker.internet().emailAddress();
+    String currentAddress = faker.lebowski().quote() + faker.music().chord();
 
     @BeforeAll
     static void beforeAllMethod() {
@@ -42,7 +43,7 @@ public class PracticeFormWithRandomUtils {
         $("label[for=hobbies-checkbox-2]").click();
         $("label[for=hobbies-checkbox-3]").click();
         $("#uploadPicture").uploadFromClasspath("img/testUploadFile1.png");
-        $("#currentAddress").setValue("Random address");
+        $("#currentAddress").setValue(currentAddress);
         $("#state").click();
         $("#stateCity-wrapper").$(byText("NCR")).click();
         $("#city").click();

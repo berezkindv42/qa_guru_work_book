@@ -18,36 +18,37 @@ public class SelenideSnippets {
 
   void browser_command_examples() {
     // -Dselenide.baseUrl=http://github.com
-    open("https://google.com");
-    open("/customer/orders");
-    open("/", AuthenticationType.BASIC, "user", "password");
+    open("https://google.com"); // открываем страницу
+    open("/customer/orders"); // открываем страницу оп частичному URL, base url открывается отдельно или возможно параметром запуска
+    open("/", AuthenticationType.BASIC, "user", "password"); // Открытие сайта с базовой аутентификацией, редко используется.
 
-    Selenide.back();
-    Selenide.refresh();
+    Selenide.back(); // кнопка "назад" в браузере
+    Selenide.refresh(); // кнопка "обновить" в браузере
 
-    Selenide.clearBrowserCookies();
-    Selenide.clearBrowserLocalStorage();
+    Selenide.clearBrowserCookies(); // очистка cookies, используется перед вызовом команды open
+    Selenide.clearBrowserLocalStorage(); // очистка local storage, используется перед вызовом команды open
 
-    Selenide.confirm(); // OK in alert dialogs
-    Selenide.dismiss(); // Cancel in alert dialogs
+    Selenide.confirm(); // OK в стандартном (встроенном в браузере) встроенном диалоге
+    Selenide.dismiss(); // Cancel в стандартном (встроенном в браузере) встроенном диалоге
 
-    Selenide.closeWindow(); // close active tab // таб(вкладка) и отдельное окно для селенида идентичны
-    Selenide.closeWebDriver(); // close browser completely
+    Selenide.closeWindow(); // закрывает активную вкладку // таб(вкладка) и отдельное окно для селенида идентичны
+    Selenide.closeWebDriver(); // закрывает все открытые окна браузера
 
-    Selenide.switchTo().frame("new"); // iframe это как frame, только без рамочки, selenium не может искать внутри iframe, туда сначала нужно перейти
+    Selenide.switchTo().frame("new"); // переходим в нутрь фрейма // iframe это как frame, только без рамочки, selenium не может искать внутри iframe, туда сначала нужно перейти
     Selenide.switchTo().defaultContent(); // переход из iframe обратно на основную страничку
+    // фрейм - это как бы страница внутри страницы.
 
-    Selenide.switchTo().window("The Internet");
+    Selenide.switchTo().window("The Internet"); // переключение между несколькими окнами
   }
 
   void selectors_examples() {
     $("div").click();
-    element("div").click(); // element эдентично $ (котлин понимает только element ибо $ у него занят)
+    element("div").click(); // element идентично $ (котлин понимает только element ибо $ у него занят)
 
-    $("div", 2).click(); // the third div
+    $("div", 2).click(); // поиск третьего div (начинается с 0)
 
-    $x("//h1/div").click();
-    $(byXpath("//h1/div")).click();
+    $(byXpath("//h1/div")).click(); // поиск по Xpath
+    $x("//h1/div").click(); // поиск по Xpath сокращенный вариант, работает в дев тулс в браузере
 
     $(byText("full text")).click();
     $(withText("ull tex")).click();

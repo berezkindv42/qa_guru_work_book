@@ -1,4 +1,4 @@
-package com.mydomain.pageObjectsAndRandomUtils.mydomain.testsExamples;
+package com.mydomain.tests.homeWorks.pageObjectsAndRandomUtils.testsExamples;
 
 public class TestBase {
 
