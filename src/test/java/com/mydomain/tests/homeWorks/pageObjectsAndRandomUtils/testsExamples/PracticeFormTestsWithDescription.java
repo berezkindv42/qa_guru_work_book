@@ -1,7 +1,7 @@
 package com.mydomain.tests.homeWorks.pageObjectsAndRandomUtils.testsExamples;
 
 import com.codeborne.selenide.Configuration;
-import com.mydomain.tests.homeWorks.pageObjectsAndRandomUtils.pages.components.RegistrationPage;
+import com.mydomain.tests.homeWorks.pageObjectsAndRandomUtils.pages.RegistrationPage;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

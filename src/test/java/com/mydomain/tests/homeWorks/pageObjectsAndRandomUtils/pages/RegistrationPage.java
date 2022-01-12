@@ -1,6 +1,7 @@
-package com.mydomain.tests.homeWorks.pageObjectsAndRandomUtils.pages.components;
+package com.mydomain.tests.homeWorks.pageObjectsAndRandomUtils.pages;
 
 import com.codeborne.selenide.SelenideElement;
+import com.mydomain.tests.homeWorks.pageObjectsAndRandomUtils.pages.components.CalendarComponent;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;

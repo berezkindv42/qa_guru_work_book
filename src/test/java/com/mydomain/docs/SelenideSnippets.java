@@ -50,30 +50,28 @@ public class SelenideSnippets {
     $(byXpath("//h1/div")).click(); // поиск по Xpath
     $x("//h1/div").click(); // поиск по Xpath сокращенный вариант, работает в дев тулс в браузере
 
-    $(byText("full text")).click();
-    $(withText("ull tex")).click();
+    $(byText("full text")).click(); // поиск по полному совпадению текста
+    $(withText("ull tex")).click(); // поиск по частичному совпадению текста
 
-    $("").parent();
-    $("").sibling(1);
-    $("").preceding(1);
-    $("").closest("div");
+    $("").parent(); // ищет родителя
+    $("").sibling(1); // ищет соседний элемент вниз по дереву, число означает номер соседа (начинается с 0)
+    $("").preceding(1); // ищет соседний элемент вверх по дереву, число означает номер соседа (начинается с 0)
+    $("").closest("div"); // ищет вверх по дереву первый запрошенный элемент
     $("").ancestor("div"); // the same as closest
     $("div:last-child");
 
 
-
-
-    $("div").$("h1").find(byText("abc")).click();
+    $("div").$("h1").find(byText("abc")).click(); // пример: ищем div, внутри него ищем h1, внутри него ищем текст "abc" // всегда будет находиться первый элемент
 
     // very optional
-    $(byAttribute("abc", "x")).click();
-    $("[abc=x]").click();
+    $(byAttribute("abc", "x")).click(); // ищем атрибут с именем "abc" и значением "x"
+    $("[abc=x]").click(); // упрощение для поиска атрибута (квадратные скобки)
 
-    $(byId("mytext")).click();
-    $("#mytext").click();
+    $(byId("mytext")).click(); // ищем id "mytext"
+    $("#mytext").click(); // упрощение для id (решетка - #)
 
-    $(byClassName("red")).click();
-    $(".red").click();
+    $(byClassName("red")).click(); // ищем класс "red"
+    $(".red").click(); // упрощение для класса (точка - .)
   }
 
   void actions_examples() {
