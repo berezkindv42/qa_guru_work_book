@@ -14,6 +14,20 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
 // this is not a full list, just the most common
+/*
+    Selenide commands examples
+    Author: https://github.com/vinogradoff
+    this is not a full list, just the most common
+
+    id="datepicker-1918-2675-1" - вот есть у нас такой элемент.
+    [id^='datepicker'][id$='-1'] - вот так к нему можно подобрать селектор
+    т.е. символ ^ отвечает за "начинается с", а символ $ отвечает за "оканчивается на"
+
+    пауза в консоли девтулза
+    setTimeout(function() {
+    debugger;
+    }, 3000);
+ */
 public class SelenideSnippets {
 
   void browser_command_examples() {
